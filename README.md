@@ -1,3 +1,14 @@
+# my changes with automatic vpn fetching
+
+based on this archived repo:
+(https://github.com/wfg/docker-openvpn-client)
+
+script `download-ovpn.sh` fetches a bunch of .ovpn configuration files from ipspeed.info
+and after building the container image `entry.sh` chooses a random file from the config/ directory
+
+if the connection fails, just restart the container
+
+
 # OpenVPN Client for Docker
 
 Archived in favor of [a WireGuard version](https://github.com/wfg/docker-wireguard).
